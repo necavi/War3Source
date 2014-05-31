@@ -1,3 +1,3 @@
 import os
 os.chdir("../")
-import compile
+from . import compile
