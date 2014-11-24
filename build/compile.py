@@ -5,6 +5,7 @@ import sys
 import subprocess
 import re
 
+os.chdir("../")
 os.system("mkdir ../compiled")
 plugins = glob.glob("*.sp")
 PATTERN_REQUIREMENTS = re.compile(r'Total requirements:\s+(\d+)\sbytes')
