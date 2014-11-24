@@ -20,5 +20,4 @@ for plugin in plugins:
     for match in re.finditer(PATTERN_REQUIREMENTS, stdout):
         total_bytes += int(match.groups()[0])
 print("Total bytes: {}".format(total_bytes))
-os.system("pause")
 sys.exit(0)
