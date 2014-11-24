@@ -6,7 +6,8 @@ import subprocess
 import re
 
 os.chdir("../")
-os.system("mkdir ../compiled")
+if not os.path.exists("../compiled"):
+    os.mkdir("../compiled")
 plugins = glob.glob("*.sp")
 PATTERN_REQUIREMENTS = re.compile(r'Total requirements:\s+(\d+)\sbytes')
 total_bytes = 0
